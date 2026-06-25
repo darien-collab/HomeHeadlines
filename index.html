@@ -35,9 +35,9 @@ a{color:inherit;}
 .byline .who .n{font-family:'Cormorant Garamond',serif;font-size:23px;font-weight:600;line-height:1.1;color:#f5efe3;}
 .byline .who .r{font-family:'Jost',sans-serif;font-weight:300;font-size:11px;letter-spacing:1px;color:#c7bca7;}
 .secnav{position:sticky;top:0;z-index:50;display:flex;gap:26px;justify-content:center;flex-wrap:wrap;background:rgba(14,11,6,.92);-webkit-backdrop-filter:blur(6px);backdrop-filter:blur(6px);border-top:1px solid var(--line);border-bottom:1px solid var(--line);padding:14px 10px;}
-.secnav a{font-family:'Jost',sans-serif;font-weight:600;font-size:11px;letter-spacing:2px;text-transform:uppercase;text-decoration:none;}
+.secnav a{font-family:'Jost',sans-serif;font-weight:600;font-size:11px;letter-spacing:2px;text-transform:uppercase;text-decoration:none;border:1px solid currentColor;border-radius:999px;padding:7px 16px;transition:transform .2s ease,box-shadow .25s ease,background .25s ease;animation:navpulse 2.8s ease-in-out infinite;}
 .secnav a.re{color:var(--re);}.secnav a.mk{color:var(--mk);}.secnav a.wd{color:var(--wd);}.secnav a.tc{color:var(--tc);}
-.secnav a:hover{opacity:.6;}
+.secnav a:hover,.secnav a:focus,.secnav a:active{transform:scale(1.1);box-shadow:0 0 18px -3px currentColor;background:rgba(255,255,255,.05);}@keyframes navpulse{0%,100%{box-shadow:0 0 0 0 rgba(0,0,0,0);}50%{box-shadow:0 0 13px -4px currentColor;}}@media(prefers-reduced-motion:reduce){.secnav a{animation:none;}}
 .figure{position:relative;width:100%;overflow:hidden;background:#16120b;}
 .figure .art{position:absolute;inset:0;width:100%;height:100%;display:block;}
 .figure .photo{position:relative;z-index:1;width:100%;height:100%;object-fit:cover;display:block;}
